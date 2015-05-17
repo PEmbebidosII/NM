@@ -34,5 +34,6 @@
         <item>AM</item>
         <item>PM</item>
     </string-array>
+    <string name="title_activity_pidedatos">pidedatos</string>
 
 </resources>

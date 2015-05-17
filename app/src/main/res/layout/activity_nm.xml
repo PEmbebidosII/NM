@@ -52,23 +52,15 @@
         </LinearLayout>
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="0.20">
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
 
-        <EditText
+        <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.20"
-            android:inputType="textMultiLine"
-            android:minLines="5"
-            android:maxLines="5"
-            android:hint="Note"/>
+            android:text="Nueva Actividad"
+            android:id="@+id/boton_pide" />
+    </LinearLayout>
 
-        </LinearLayout>
 </LinearLayout>

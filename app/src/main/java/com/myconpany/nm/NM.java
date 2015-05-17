@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -37,6 +39,16 @@ public class NM extends ActionBarActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nm);
+
+        Button boton_nuevaActividad = (Button) findViewById(R.id.boton_pide);
+
+        boton_nuevaActividad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent llamadaPideDatos = new Intent(NM.this, pidedatos.class);
+                startActivity(llamadaPideDatos);
+            }
+        });
 
         //Spinner1
         Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
@@ -183,10 +195,12 @@ public class NM extends ActionBarActivity
 
     public void Text()
     {
-        EditText editText = (EditText) findViewById(R.id.editText);
-        message= editText.getText().toString();
+       // EditText editText = (EditText) findViewById(R.id.editText);
+        //message= editText.getText().toString();
 
-        //TextView textview=(TextView) findViewById(R.id.textview);
+        //TextView textview=(TextView) findViewById(R.id.TextView);
         //textview.setText(message);
     }
+
+
 }
