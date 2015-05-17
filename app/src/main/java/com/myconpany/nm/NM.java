@@ -50,6 +50,8 @@ public class NM extends ActionBarActivity
             }
         });
 
+
+
         //Spinner1
         Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);
         // Create an ArrayAdapter using the string array and a default spinner layout
